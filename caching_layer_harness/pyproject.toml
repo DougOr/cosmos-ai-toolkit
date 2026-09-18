@@ -1,0 +1,42 @@
+[project]
+name = "caching-layer-harness"
+version = "1.0.0"
+description = "Production-ready Azure Cosmos DB caching layer for LLM prompts and generic JSON data"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "azure-cosmos>=4.7.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.26.0",
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "black>=23.12.0",
+    "ruff>=0.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.26.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["caching_layer_harness"]
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
