@@ -1,7 +1,7 @@
 ﻿# QuasarAI Decision Record
 
 Each decision below exists because the v1 harness
-([`v1-harness/`](../v1-harness/), kept frozen as the reference line) did
+([`caching_layer_harness/`](../caching_layer_harness/), kept frozen as the reference line) did
 the opposite, and the consequences were observable. This is the
 "what I got wrong" ledger, kept next to the code.
 
