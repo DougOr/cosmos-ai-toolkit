@@ -1,0 +1,66 @@
+{
+  "generated_by": "cosmotwin python",
+  "results": [
+    {
+      "backend": "python-memory",
+      "scenario": "read_heavy",
+      "ops": 200000,
+      "errors": 0,
+      "reads": 179926,
+      "hit_ratio": 1.0,
+      "total_s": 0.599,
+      "ops_per_sec": 333848.5,
+      "mean_ms": 0.0005,
+      "p50_ms": 0.0004,
+      "p95_ms": 0.0012,
+      "p99_ms": 0.0019
+    },
+    {
+      "backend": "python-memory",
+      "scenario": "write_heavy",
+      "ops": 200000,
+      "errors": 0,
+      "reads": 19916,
+      "hit_ratio": 1.0,
+      "total_s": 0.461,
+      "ops_per_sec": 433391.5,
+      "mean_ms": 0.0006,
+      "p50_ms": 0.0005,
+      "p95_ms": 0.0009,
+      "p99_ms": 0.0012
+    },
+    {
+      "backend": "python-memory",
+      "scenario": "mixed",
+      "ops": 200000,
+      "errors": 0,
+      "reads": 100133,
+      "hit_ratio": 1.0,
+      "total_s": 0.401,
+      "ops_per_sec": 498947.3,
+      "mean_ms": 0.0004,
+      "p50_ms": 0.0004,
+      "p95_ms": 0.0007,
+      "p99_ms": 0.001
+    },
+    {
+      "backend": "python-memory",
+      "scenario": "hot_key",
+      "ops": 100000,
+      "errors": 0,
+      "reads": 100000,
+      "hit_ratio": 1.0,
+      "total_s": 0.165,
+      "ops_per_sec": 604444.4,
+      "mean_ms": 0.0002,
+      "p50_ms": 0.0002,
+      "p95_ms": 0.0003,
+      "p99_ms": 0.0004
+    }
+  ],
+  "stampede": {
+    "waiters": 10000,
+    "generations": 1,
+    "wall_ms": 105.91
+  }
+}
