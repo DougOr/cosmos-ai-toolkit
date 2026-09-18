@@ -18,7 +18,7 @@ QuasarAI is the **async core** of a three-piece Cosmos DB AI toolkit:
 | **QuasarAI** *(this repo)* | async get-or-generate cache engine: stampede locks, parallel bulk, TTL presets, parameterized invalidation |
 | [NebulaMind](../cosmos-nebula-mind) | real-LLM **semantic** cache: exact + similarity hits, pluggable providers |
 | [OrbitBench AI](../cosmos-orbit-bench) | pluggable cache **backends + honest benchmarks** with p50/p95/p99 receipts |
-| *v1 reference:* [`v1-harness/`](../v1-harness/) | frozen "before" - every v1 flaw is an ADR here ([docs/DECISIONS.md](docs/DECISIONS.md)) |
+| *v1 reference:* [`caching_layer_harness/`](../caching_layer_harness/) | frozen "before" - every v1 flaw is an ADR here ([docs/DECISIONS.md](docs/DECISIONS.md)) |
 
 ## Why QuasarAI exists
 
