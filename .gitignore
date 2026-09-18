@@ -1,0 +1,49 @@
+# Environments and secrets - never commit
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Rust
+target/
+**/target/
+
+# Databases and local state
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+
+# Logs and server output
+*.log
+server.log
+server.err
+logs/
+
+# OS and IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
