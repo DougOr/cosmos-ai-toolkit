@@ -1,4 +1,4 @@
-# Cosmos AI Toolkit
+﻿# Cosmos AI Toolkit
 
 Measured, reproducible caching-layer components for LLM workloads on Azure Cosmos DB - plus the frozen v1 that shows why the measurements matter.
 
@@ -12,13 +12,13 @@ Rule zero of this toolkit: never publish a number that is not recorded in a READ
 | [`twin-rs`](twin-rs/) - **CosmoTwin** | Rust-vs-Python rewrite hypothesis, benchmarked before rewriting | Rust **3.3M ops/s** vs Python **334k ops/s** (9.9x); identical op sequences from one shared seed; system impact of the 10x: **~0.006%** |
 | [`orbit-bench`](orbit-bench/) - **OrbitBench AI** | An honest benchmark whose errors column is the best data | Memory backend **608k ops/s** vs Cosmos **73 ops/s**; **~1% HTTP 429s** surfaced in the errors column; same seed = identical runs |
 | [`nebula-mind`](nebula-mind/) - **NebulaMind** | Semantic cache that refuses to lie about itself | Generated 239 ms -> exact hit **12 ms (20x)**; rephrased question scores **0.727** and says so; honesty flags stored in the data |
-| [`v1-harness`](v1-harness/) - **frozen v1** | The cautionary tale: a "17.9x faster" claim built on its own simulated sleep | Kept public on purpose. Read it before trusting any benchmark, including ours |
+| [`caching_layer_harness`](caching_layer_harness/) - **frozen v1** | The cautionary tale: a "17.9x faster" claim built on its own simulated sleep | Kept public on purpose. Read it before trusting any benchmark, including ours |
 
 ## The three narratives
 
 1. **Receipts over vibes** - benchmarks that surface throttling, percentiles, and reproducibility (OrbitBench, CosmoTwin).
 2. **Pay once, answer fast, never lie** - LLM caching done correctly (QuasarAI, NebulaMind).
-3. **Show your wrongs** - v1 -> v2 decision-record culture as a seniority signal (v1-harness vs everything above).
+3. **Show your wrongs** - v1 -> v2 decision-record culture as a seniority signal (caching_layer_harness vs everything above).
 
 ## Running it
 
